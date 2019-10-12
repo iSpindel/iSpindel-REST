@@ -5,9 +5,10 @@ const AutoLoad = require('fastify-autoload')
 
 module.exports = (fastify, opts, next) => {
   // Place here your custom code!
-  fastify.register(require('fastify-mongodb'), {
-    url: 'mongodb://localhost/iSpindel'
-  })
+  // fastify.register(require('fastify-mongodb'), {
+  //   url: 'mongodb://localhost/iSpindel',
+  //   name: 'mongodb'
+  // })
 
   // Do not touch the following lines
 
