@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = async (fastify, opts) => {
-  fastify.get('/battery', async (request, reply) => {
+  fastify.get('/v1/battery', async (request, reply) => {
     fastify.mongo.mongodb.db.collection('iSpindel0', (err, collection) => {
       if (err) return reply.send(err)
 
